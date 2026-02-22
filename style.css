@@ -1,0 +1,39 @@
+body{
+    background:#d1cfd8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+/*Container For Animation */ 
+.container{
+    width:500px;
+    height: 500px;
+    background:#151423;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;box-shadow: 16px 8px 5px #b8b8ba;
+
+}
+/* Loader Container */
+.loader {
+
+}
+
+/*Frying Pan */ 
+.pan{
+    width: 120px ;
+    height: 50px;
+    background: white;
+    border-radius: 10px;
+    transform-origin: left center;
+    animation: Move 1s infinite ease-in-out;  
+
+}
+
+/* Food */
+.food{
+
+}
