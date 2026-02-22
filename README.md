@@ -17,7 +17,7 @@ Built with:
 
 
 ## 🛣️ Project Structure
----
+
 
 Here are the key files and their purposes:
 
@@ -29,7 +29,7 @@ Here are the key files and their purposes:
 
 
 ## ◼️ How It Works
----
+
 
 - The animation is created using CSS **transforms** and **keyframes**:
 
@@ -45,7 +45,6 @@ Here are the key files and their purposes:
 
 
 ## 💬 Concepts Used
----
 
 - CSS Flexbox for centering layout
 
@@ -61,7 +60,6 @@ Here are the key files and their purposes:
 
   
 ## 🏔️ Purpose
----
 
 - This project was created to practice CSS animations, layout positioning, and building custom loaders for modern web interfaces.
 
