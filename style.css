@@ -1,3 +1,11 @@
+:root{
+    --navy-blue:#151423;
+    --light-blue: #292a4d;
+    --orange: rgb(220, 163, 59) ;
+    --white: white;
+}
+
+
 body{
     background:#d1cfd8;
     display: flex;
@@ -6,6 +14,8 @@ body{
     height: 100vh;
     margin: 0;
 }
+
+
 /*Container For Animation */ 
 .container{
     width:500px;
@@ -17,23 +27,59 @@ body{
     align-items: center;box-shadow: 16px 8px 5px #b8b8ba;
 
 }
-/* Loader Container */
-.loader {
 
+
+/* Loader */
+.loader{
+    position: relative;
 }
+
 
 /*Frying Pan */ 
 .pan{
-    width: 120px ;
-    height: 50px;
-    background: white;
-    border-radius: 10px;
-    transform-origin: left center;
-    animation: Move 1s infinite ease-in-out;  
+    width: 100px ;
+    height:20px ;
+    background-color: var(--white);
+    border-radius: 0 0 15px 15px;
+    position: relative;
+   
+}
+
+
+/* Handle */
+.pan::before{
+    content: "";
+    width: 60px;
+    height: 8px;
+    background-color: var(--white);
+    position: absolute;
+    right: -70px;
+    top: 7px;
+    border-radius: 2px;
 
 }
 
 /* Food */
-.food{
+.pan::after{
+    content: "";
+    position: absolute;
+    background-color:var(--orange) ;
+    width: 30px;
+    height: 10px;
+    border-radius: 3px;
+    z-index: -1;
+    
+}
 
+
+/* Shadow */
+.shadow{
+    width: 80px;
+    height: 8px;
+    border-radius: 20px;
+    background: var(--light-blue);
+    position: absolute;
+    right: 8px;
+    top: 50px;
+   
 }
