@@ -3,8 +3,9 @@
     --light-blue: #292a4d;
     --orange: rgb(220, 163, 59) ;
     --white: white;
-}
 
+}
+ 
 
 body{
     background:#d1cfd8;
@@ -24,7 +25,8 @@ body{
     border-radius: 10px;
     display: flex;
     justify-content: center;
-    align-items: center;box-shadow: 16px 8px 5px #b8b8ba;
+    align-items: center;
+    box-shadow: 16px 8px 5px #b8b8ba;
 
 }
 
@@ -32,6 +34,7 @@ body{
 /* Loader */
 .loader{
     position: relative;
+    
 }
 
 
@@ -42,6 +45,7 @@ body{
     background-color: var(--white);
     border-radius: 0 0 15px 15px;
     position: relative;
+    animation: pan 1.5s infinite ease-in-out;
    
 }
 
@@ -63,12 +67,14 @@ body{
 .pan::after{
     content: "";
     position: absolute;
-    background-color:var(--orange) ;
+    background-color:var(--orange);
     width: 30px;
     height: 10px;
-    border-radius: 3px;
-    z-index: -1;
-    
+    border-radius: 5px;
+    left: 20px;
+    top: -10px;
+    animation: toss 1.5s infinite ease-in-out;
+
 }
 
 
@@ -81,5 +87,23 @@ body{
     position: absolute;
     right: 8px;
     top: 50px;
+    animation: shadow 1.5s infinite ease-in-out;
    
 }
+
+/* --- KEYFRAMES --- */
+
+@keyframes pan {
+    0%{transform: rotate(0deg);}
+    25%{transform:  rotate(-25deg );}
+    75%{transform: rotate(20deg);}
+    100% {transform: rotate(0deg);}
+}
+
+@keyframes shadow {
+    0%{transform: scale(1);}
+    25%{transform:  scale(0.7);}
+    75%{transform: scale(0.99);}
+    100% {transform: scale(1);}
+}
+
